@@ -61,6 +61,35 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Цвета в стилистике логотипа БМП
+				bmp: {
+					navy: '#1a365d', // Темно-синий фон логотипа
+					gold: '#f6d55c', // Золотистый цвет из логотипа
+					blue: {
+						50: '#f0f8ff',
+						100: '#e0f2fe',
+						200: '#bae6fd',
+						300: '#7dd3fc',
+						400: '#38bdf8',
+						500: '#0ea5e9',
+						600: '#0284c7',
+						700: '#0369a1',
+						800: '#075985',
+						900: '#1a365d'
+					},
+					yellow: {
+						50: '#fefce8',
+						100: '#fef9c3',
+						200: '#fef08a',
+						300: '#fde047',
+						400: '#facc15',
+						500: '#f6d55c',
+						600: '#ca8a04',
+						700: '#a16207',
+						800: '#854d0e',
+						900: '#713f12'
+					}
 				}
 			},
 			borderRadius: {
