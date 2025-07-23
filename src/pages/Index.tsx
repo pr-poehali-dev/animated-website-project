@@ -325,7 +325,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-bmp-navy mb-4">Портфолио проектов</h2>
-            <p className="text-lg lg:text-xl text-bmp-blue-700 max-w-2xl mx-auto">
+            <p className="text-lg lg:text-xl text-white/90 max-w-2xl mx-auto">
               Примеры наших работ в программе Базис Мебельщик
             </p>
           </div>
