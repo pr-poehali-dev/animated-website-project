@@ -324,7 +324,7 @@ const Index = () => {
       <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-bmp-navy mb-4">Портфолио проектов</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Портфолио проектов</h2>
             <p className="text-lg lg:text-xl text-white/90 max-w-2xl mx-auto">
               Примеры наших работ в программе Базис Мебельщик
             </p>
@@ -408,8 +408,8 @@ const Index = () => {
       <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-bmp-navy mb-4">Отзывы клиентов</h2>
-            <p className="text-lg lg:text-xl text-bmp-blue-700 max-w-2xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Отзывы клиентов</h2>
+            <p className="text-lg lg:text-xl text-white max-w-2xl mx-auto">
               Что говорят о нашей работе
             </p>
           </div>
