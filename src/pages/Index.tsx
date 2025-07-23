@@ -462,15 +462,15 @@ const Index = () => {
                 </div>
                 <div className="flex items-center text-slate-300">
                   <Icon name="Mail" className="mr-4 text-bmp-gold flex-shrink-0" size={24} />
-                  <span>info@furniture-bureau.ru</span>
+                  <span>BMP-Bazis@yandex.ru</span>
                 </div>
                 <div className="flex items-center text-slate-300">
                   <Icon name="MapPin" className="mr-4 text-bmp-gold flex-shrink-0" size={24} />
-                  <span>г. Москва, ул. Примерная, д. 123</span>
+                  <span>г. Екатеринбург</span>
                 </div>
                 <div className="flex items-center text-slate-300">
                   <Icon name="Clock" className="mr-4 text-bmp-gold flex-shrink-0" size={24} />
-                  <span>Пн-Пт: 9:00 - 18:00</span>
+                  <span>Ежедневно с 9:00 - 23:00</span>
                 </div>
               </div>
             </div>
@@ -512,8 +512,8 @@ const Index = () => {
               <h4 className="font-semibold text-white mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm">
                 <li>+7 909 700 54 44</li>
-                <li>info@furniture-bureau.ru</li>
-                <li>г. Москва</li>
+                <li>BMP-Bazis@yandex.ru</li>
+                <li>г. Екатеринбург</li>
               </ul>
             </div>
           </div>
