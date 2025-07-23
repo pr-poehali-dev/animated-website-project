@@ -104,10 +104,11 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Open Sans", system-ui, sans-serif;
-    cursor:
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg>')
-        12 12,
-      auto;
+    cursor: none !important;
+  }
+
+  * {
+    cursor: none !important;
   }
 
   h1,
@@ -119,11 +120,34 @@
     font-family: "Montserrat", system-ui, sans-serif;
   }
 
-  a,
-  button {
-    cursor:
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg>')
-        12 12,
-      pointer;
+  /* Neon cursor animations */
+  @keyframes neonPulse {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes neonGlow {
+    0%,
+    100% {
+      box-shadow:
+        0 0 5px #f59e0b,
+        0 0 10px #f59e0b,
+        0 0 15px #f59e0b,
+        0 0 20px #f59e0b;
+    }
+    50% {
+      box-shadow:
+        0 0 10px #f59e0b,
+        0 0 20px #f59e0b,
+        0 0 30px #f59e0b,
+        0 0 40px #f59e0b;
+    }
   }
 }
