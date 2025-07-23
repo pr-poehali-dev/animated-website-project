@@ -35,11 +35,11 @@ const AnimatedCursor: React.FC = () => {
         transform: 'translate(-12px, -12px)',
       }}
     >
-      <div className="animate-pulse">
+      <div className="animate-bounce">
         <Icon 
-          name="ArrowUpRight" 
-          size={24} 
-          className="text-bmp-gold drop-shadow-lg transform rotate-45" 
+          name="ArrowUpLeft" 
+          size={20} 
+          className="text-bmp-gold drop-shadow-lg transform transition-transform duration-300 hover:scale-110" 
         />
       </div>
     </div>

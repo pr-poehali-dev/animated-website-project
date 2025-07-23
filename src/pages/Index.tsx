@@ -131,7 +131,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-bmp-navy via-bmp-blue-900 to-bmp-blue-800 relative" style={{ cursor: 'none' }}>
+    <div className="min-h-screen relative" style={{ cursor: 'none', backgroundColor: '#002d52' }}>
       {/* Subtle pattern background */}
       <div className="absolute inset-0 opacity-10" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f6d55c' opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E")`
@@ -168,24 +168,24 @@ const Index = () => {
         </div>
       )}
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-orange-300 z-50 transition-all duration-300 shadow-lg">
+      <nav className="fixed top-0 w-full bg-white/10 backdrop-blur-md border-b border-bmp-gold/30 z-50 transition-all duration-500 shadow-2xl hover:bg-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-4">
-              <Icon name="Hammer" className="text-orange-600" size={40} />
+              <Icon name="Hammer" className="text-bmp-gold animate-pulse" size={40} />
               <div className="flex flex-col">
-                <span className="font-bold text-2xl lg:text-3xl text-slate-800 leading-tight">Бюро Мебельных</span>
-                <span className="font-bold text-2xl lg:text-3xl text-orange-600 leading-tight -mt-1">Проектов</span>
+                <span className="font-bold text-2xl lg:text-3xl text-white leading-tight transition-all duration-300 hover:text-bmp-gold">Бюро Мебельных</span>
+                <span className="font-bold text-2xl lg:text-3xl text-bmp-gold leading-tight -mt-1 animate-pulse">Проектов</span>
               </div>
             </div>
             
             {/* Desktop Menu */}
             <div className="hidden lg:flex space-x-8">
-              <button onClick={() => scrollToSection('services')} className="text-slate-800 hover:text-orange-600 transition-colors duration-200 font-medium">Услуги</button>
-              <button onClick={() => scrollToSection('portfolio')} className="text-slate-800 hover:text-orange-600 transition-colors duration-200 font-medium">Портфолио</button>
-              <button onClick={() => scrollToSection('process')} className="text-slate-800 hover:text-orange-600 transition-colors duration-200 font-medium">Процесс</button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-slate-800 hover:text-orange-600 transition-colors duration-200 font-medium">Отзывы</button>
-              <button onClick={() => scrollToSection('contact')} className="text-slate-800 hover:text-orange-600 transition-colors duration-200 font-medium">Контакты</button>
+              <button onClick={() => scrollToSection('services')} className="text-white hover:text-bmp-gold transition-all duration-300 font-medium hover:scale-105 transform">Услуги</button>
+              <button onClick={() => scrollToSection('portfolio')} className="text-white hover:text-bmp-gold transition-all duration-300 font-medium hover:scale-105 transform">Портфолио</button>
+              <button onClick={() => scrollToSection('process')} className="text-white hover:text-bmp-gold transition-all duration-300 font-medium hover:scale-105 transform">Процесс</button>
+              <button onClick={() => scrollToSection('testimonials')} className="text-white hover:text-bmp-gold transition-all duration-300 font-medium hover:scale-105 transform">Отзывы</button>
+              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-bmp-gold transition-all duration-300 font-medium hover:scale-105 transform">Контакты</button>
             </div>
 
             <div className="flex items-center space-x-4">
@@ -199,20 +199,20 @@ const Index = () => {
                 className="lg:hidden p-2"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
-                <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} className="text-bmp-blue-700" />
+                <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} className="text-white hover:text-bmp-gold transition-colors duration-300" />
               </button>
             </div>
           </div>
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="lg:hidden bg-white border-t border-bmp-gold/30 py-4">
+            <div className="lg:hidden bg-white/10 backdrop-blur-md border-t border-bmp-gold/30 py-4 animate-slide-in-left">
               <div className="flex flex-col space-y-4">
-                <button onClick={() => scrollToSection('services')} className="text-left px-4 py-2 text-bmp-blue-700 hover:text-bmp-gold transition-colors duration-200">Услуги</button>
-                <button onClick={() => scrollToSection('portfolio')} className="text-left px-4 py-2 text-bmp-blue-700 hover:text-bmp-gold transition-colors duration-200">Портфолио</button>
-                <button onClick={() => scrollToSection('process')} className="text-left px-4 py-2 text-bmp-blue-700 hover:text-bmp-gold transition-colors duration-200">Процесс</button>
-                <button onClick={() => scrollToSection('testimonials')} className="text-left px-4 py-2 text-bmp-blue-700 hover:text-bmp-gold transition-colors duration-200">Отзывы</button>
-                <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-bmp-blue-700 hover:text-bmp-gold transition-colors duration-200">Контакты</button>
+                <button onClick={() => scrollToSection('services')} className="text-left px-4 py-2 text-white hover:text-bmp-gold transition-all duration-300 hover:scale-105 transform">Услуги</button>
+                <button onClick={() => scrollToSection('portfolio')} className="text-left px-4 py-2 text-white hover:text-bmp-gold transition-all duration-300 hover:scale-105 transform">Портфолио</button>
+                <button onClick={() => scrollToSection('process')} className="text-left px-4 py-2 text-white hover:text-bmp-gold transition-all duration-300 hover:scale-105 transform">Процесс</button>
+                <button onClick={() => scrollToSection('testimonials')} className="text-left px-4 py-2 text-white hover:text-bmp-gold transition-all duration-300 hover:scale-105 transform">Отзывы</button>
+                <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-white hover:text-bmp-gold transition-all duration-300 hover:scale-105 transform">Контакты</button>
                 <div className="px-4">
                   <Button onClick={() => setShowPhoneModal(true)} className="w-full bg-bmp-gold hover:bg-bmp-yellow-600 text-bmp-navy font-bold">
                     <Icon name="Phone" size={16} className="mr-2" />
@@ -237,22 +237,22 @@ const Index = () => {
                 className="w-72 h-72 lg:w-96 lg:h-96 mx-auto object-contain"
               />
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl animate-fade-in">
               Профессиональное
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-amber-800 block">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-bmp-gold to-yellow-300 block animate-pulse">
                 проектирование мебели
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-slate-800 max-w-3xl mx-auto mb-8 leading-relaxed px-4 drop-shadow-sm font-medium">
+            <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-8 leading-relaxed px-4 drop-shadow-lg font-medium backdrop-blur-sm bg-white/10 rounded-lg p-4 transition-all duration-500 hover:bg-white/20">
               Создаем детальные 3D модели и чертежи мебели из плитных материалов в программе Базис Мебельщик. 
               От идеи до готовой документации для производства.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button size="lg" onClick={() => setShowPhoneModal(true)} className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg hover:scale-105 transition-all duration-300 font-bold shadow-lg">
+              <Button size="lg" onClick={() => setShowPhoneModal(true)} className="bg-bmp-gold hover:bg-yellow-500 text-bmp-navy px-8 py-3 text-lg hover:scale-110 transition-all duration-500 font-bold shadow-2xl animate-bounce">
                 <Icon name="Sparkles" size={20} className="mr-2" />
                 Начать проект
               </Button>
-              <Button size="lg" variant="outline" onClick={() => scrollToSection('portfolio')} className="border-orange-600 text-slate-800 hover:bg-orange-50 px-8 py-3 text-lg hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm shadow-lg font-medium">
+              <Button size="lg" variant="outline" onClick={() => scrollToSection('portfolio')} className="border-bmp-gold text-white hover:bg-bmp-gold/20 px-8 py-3 text-lg hover:scale-105 transition-all duration-500 bg-white/10 backdrop-blur-sm shadow-2xl font-medium hover:text-bmp-gold">
                 <Icon name="Play" size={20} className="mr-2" />
                 Смотреть примеры
               </Button>
