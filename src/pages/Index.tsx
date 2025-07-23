@@ -316,7 +316,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center text-bmp-gold/80">
                   <Icon name="Mail" className="mr-4 text-bmp-gold" size={24} />
-                  <span>info@furniture-bureau.ru</span>
+                  <span>BMP-Bazis@yandex.ru</span>
                 </div>
                 <div className="flex items-center text-bmp-gold/80">
                   <Icon name="MapPin" className="mr-4 text-bmp-gold" size={24} />
