@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 
-import NeonCursor from '@/components/NeonCursor';
+import AnimatedCursor from '@/components/AnimatedCursor';
 import PortfolioModal from '@/components/PortfolioModal';
 
 const Index = () => {
@@ -131,12 +131,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-200 via-amber-100 to-yellow-200 relative">
-      {/* Wood pattern background */}
-      <div className="absolute inset-0 opacity-20" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' opacity='0.4'%3E%3Cpath d='M20 20h10v10H20zM40 20h10v10H40zM60 20h10v10H60zM80 20h10v10H80zM10 40h10v10H10zM30 40h10v10H30zM50 40h10v10H50zM70 40h10v10H70zM90 40h10v10H90zM20 60h10v10H20zM40 60h10v10H40zM60 60h10v10H60zM80 60h10v10H80zM10 80h10v10H10zM30 80h10v10H30zM50 80h10v10H50zM70 80h10v10H70zM90 80h10v10H90z'/%3E%3C/g%3E%3C/svg%3E")`
+    <div className="min-h-screen bg-gradient-to-br from-bmp-navy via-bmp-blue-900 to-bmp-blue-800 relative" style={{ cursor: 'none' }}>
+      {/* Subtle pattern background */}
+      <div className="absolute inset-0 opacity-10" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f6d55c' opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E")`
       }}></div>
-      <NeonCursor />
+      <AnimatedCursor />
       
       {/* Модальное окно с телефоном */}
       {showPhoneModal && (
