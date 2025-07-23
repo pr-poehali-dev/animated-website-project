@@ -53,7 +53,7 @@ const Index = () => {
         features: ["Система плавного закрывания", "Встроенная подсветка", "Скрытые петли", "Выдвижные ящики полного выдвижения"],
         time: "3 рабочих дня"
       },
-      gallery: ["https://cdn.poehali.dev/files/c58123c8-a916-4da5-96d7-94d35b124d06.jpg", "/img/9ca43309-41e1-4162-900b-7d1ba9b2f2bb.jpg", "/img/ac939bb2-44fc-40cd-8eff-370e5d0a58e5.jpg"]
+      gallery: ["https://cdn.poehali.dev/files/c58123c8-a916-4da5-96d7-94d35b124d06.jpg", "https://cdn.poehali.dev/files/2e44214b-32d0-45be-8a82-e992c0f7f72f.jpg", "/img/ac939bb2-44fc-40cd-8eff-370e5d0a58e5.jpg"]
     },
     {
       title: "Шкаф-купе",
