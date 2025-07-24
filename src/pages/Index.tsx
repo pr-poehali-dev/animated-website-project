@@ -234,7 +234,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/4d8e7fed-4ef2-4405-b813-8b620196e9b8.png" 
                 alt="БМП - Бюро Мебельных Проектов" 
-                className="w-72 h-72 lg:w-96 lg:h-96 mx-auto object-contain animate-[pulse_5s_ease-in-out_infinite] hover:scale-125 transition-transform duration-500"
+                className="w-72 h-72 lg:w-96 lg:h-96 mx-auto object-contain animate-[pulse_8s_ease-in-out_infinite] hover:scale-125 transition-transform duration-500"
               />
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl animate-fade-in">
